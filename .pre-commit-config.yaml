@@ -8,7 +8,7 @@ exclude: vendor
 
 repos:
   - repo: https://github.com/adrienverge/yamllint
-    rev: v1.25.0
+    rev: v1.35.1
     hooks:
       - id: yamllint
         args:
@@ -16,7 +16,7 @@ repos:
           - --strict
 
   - repo: https://github.com/jumanjihouse/pre-commit-hook-yamlfmt
-    rev: 0.1.0  # or higher tag
+    rev: 0.2.3  # or higher tag
     hooks:
       - id: yamlfmt
         args:
@@ -27,7 +27,7 @@ repos:
         exclude: repocop.yaml
 
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v3.3.0
+    rev: v4.6.0
     hooks:
       - id: check-added-large-files
       - id: check-byte-order-marker
@@ -47,7 +47,7 @@ repos:
       - id: trailing-whitespace
 
   - repo: https://github.com/syntaqx/git-hooks
-    rev: v0.0.16
+    rev: v0.0.18
     hooks:
       - id: forbid-binary
         # Exclude png and server.zip forbid, we can check these in.
@@ -64,17 +64,17 @@ repos:
           - -i=2    # indent 2 spaces
 
   - repo: https://github.com/PyCQA/pylint
-    rev: pylint-2.6.0
+    rev: v3.2.5
     hooks:
       - id: pylint
 
-  - repo: https://gitlab.com/pycqa/flake8
-    rev: 3.8.4
+  - repo: https://github.com/PyCQA/flake8
+    rev: 7.1.0
     hooks:
       - id: flake8
 
   - repo: https://github.com/psf/black
-    rev: 20.8b1
+    rev: 24.4.2
     hooks:
       - id: black
         args:
