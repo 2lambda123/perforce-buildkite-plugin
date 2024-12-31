@@ -64,7 +64,7 @@ repos:
           - -i=2    # indent 2 spaces
 
   - repo: https://github.com/PyCQA/pylint
-    rev: v3.3.2
+    rev: v3.3.3
     hooks:
       - id: pylint
 
