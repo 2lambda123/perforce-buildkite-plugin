@@ -64,7 +64,7 @@ repos:
           - -i=2    # indent 2 spaces
 
   - repo: https://github.com/PyCQA/pylint
-    rev: v3.3.3
+    rev: v3.3.4
     hooks:
       - id: pylint
 
@@ -74,7 +74,7 @@ repos:
       - id: flake8
 
   - repo: https://github.com/psf/black
-    rev: 24.10.0
+    rev: 25.1.0
     hooks:
       - id: black
         args:
